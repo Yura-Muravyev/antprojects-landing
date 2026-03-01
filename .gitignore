@@ -43,6 +43,10 @@ next-env.d.ts
 # IDE
 .vscode/
 .idea/
+.claude
 
 # OS
 Thumbs.db
+
+# Local instructions (personal notes, not for repo)
+/instructions
