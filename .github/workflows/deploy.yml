@@ -19,7 +19,7 @@ jobs:
           script: |
             cd /data/docker/antprojects-landing
             git pull
-            docker build -t antprojects-landing .
+            docker build --no-cache -t antprojects-landing .
             docker stop landing || true
             docker rm landing || true
             docker run -d --name landing -p 3001:3000 --restart unless-stopped antprojects-landing
